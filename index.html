@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chameleonprint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigace -->
+ <nav class="sticky-nav">
+  <div class="nav-container">
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+      <li><img class="nav-icon" src="images/chameleon-web-logo.png" alt="icon"></li>
+      <li><a href="#">Domů</a></li>
+
+      <li class="dropdown">
+        <a href="#services" class="dropbtn">
+          Služby <span class="arrow">▼</span>
+        </a>
+        <div class="dropdown-content">
+		  <a href="#services">Všechny</a>
+          <a href="#UV-tisk">UV tisk</a>
+          <a href="#frezovani">Frézování velkých formátu</a>
+          <a href="#laserove-rezani">Laserování</a>
+          <a href="#vysek-a-orez">Výsek a tvarový ořez</a>
+          <a href="#ohybani-plastu">Ohýbání plastů</a>
+          <a href="#lentikularni-tisk">Lentikulární tisk</a>
+		  <a href="#rezaci-plotr">Řezací plotr</a>
+		  <a href="#formatovani-papiru">Formátování papíru</a>
+        </div>
+      </li>
+
+      <li><a href="#maschines">Stroje</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+	<div id="overlay" onclick="closeMenu()"></div>
+
+    <!-- Home -->
+    <section class="home">
+        <div class="home-text">
+            <h1>Chameleonprint</h1>
+            <p>Nejsme pouze tiskárna, <br>
+						jsme kreativní studio s vlastní výrobou. <br><br>
+						Dokážeme přeměnit Vaše představy do reality.</p>
+        </div>
+        <div class="home-video">
+            <video autoplay muted loop class="background-video">
+                <source src="videos/rezaniDrevaSKurou.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+            
+        </div>
+    </section>
+
+    <!-- Services boxes-->
+		 <br><br>
+		<h2 id="services" class="section-title" style="text-align: center;">Naše služby</h2>
+    <div class="services">
+
+		<!--UV tisk-->
+        <div class="box">
+            <img src="images/uv-tisk-box-foto.jpg" alt="Obrázek 1" class="gallery">
+							<h2 style="color: white;">UV tisk</h2>
+            	<p id="black-text">UV tisk je moderní technologie tisku, při které se barva okamžitě vytvrzuje UV světlem, což umožňuje tisknout přímo na různé materiály.</p>
+            	<div class="text-box">
+								<a class="more-btn" href="#UV-tisk">Více</a>
+							</div>
+        </div>
+
+		<!--Frézování velkých formátů-->
+        <div class="box">
+            <img src="images/freza-box-foto.jpg" alt="Obrázek 2" class="gallery">
+						<h2 style="color: white;">Frézování velkých formátů</h2>
+            <p id="black-text">Frézování velkých formátů je obrábění materiálů pomocí CNC frézy na velkých plochách pro přesné tvary a detaily.</p>
+						<div class="text-box">
+							<a class="more-btn" href="#frezovani">Více</a>
+						</div>
+        </div>
+
+		<!--Laserové řezání a gravírování-->
+        <div class="box">
+            <img src="images/laser-box-foto.jpg" alt="Obrázek 3" class="gallery">
+						<h2 style="color: white;">Laserové řezání a gravírování</h2>
+            <p id="black-text">Laserové řezání a gravírování je přesná technologie, která pomocí laseru řeže materiály do požadovaných tvarů a vytváří detailní gravírované vzory.</p>
+						<div class="text-box">
+							<a class="more-btn" href="#laserove-rezani">Více</a>
+						</div>
+        </div>
+
+		<!--Výsek a tvarový ořez-->
+		<div class="box">
+            <img src="images/vysek-box-foto.jpg" alt="Obrázek 3" class="gallery">
+						<h2 style="color: white;">Výsek a tvarový ořez</h2>
+            <p id="black-text">Výsek a tvarový ořez je polygrafická metoda pro dodání tištěným materiálům nepravoúhlého, specifického tvaru, který nelze dosáhnout standardním ořezem. Zatímco klasický ořez je pro rovné řezy, tvarový ořez využívá výsekovou raznici (plech s noži) pro vyšší série (etikety, krabičky, visačky).</p>
+						<div class="text-box">
+							<a class="more-btn" href="#vysek-a-orez">Více</a>
+						</div>
+        </div>
+
+		<!--Ohýbání plastů-->
+		<div class="box">
+            <img src="images/ohybacka.png" alt="Obrázek 3" class="gallery">
+						<h2 style="color: white;">Ohýbání plastů</h2>
+            <p id="black-text">Princip ohýbání plastů - ohýbaný termoplast se umístí nad topnou tyč nebo strunu a po určitou dobu se vystaví působení tepla. Tím dojde k lokálnímu změknutí materiálu, který se dá nepatrnou silou tvarovat.</p>
+						<div class="text-box">
+							<a class="more-btn" href="#ohybani-plastu">Více</a>
+						</div>
+        </div>
+
+		<!--Lentikulární tisk-->
+		<div class="box">
+            <img src="images/lentikular-box-foto.jpg" alt="Obrázek 3" class="gallery">
+						<h2 style="color: white;">Lentikulární tisk</h2>
+            <p id="black-text">Lentikulární tisk je technologie, která se používá k výrobě obrázků s iluzí hloubky nebo možností změnit nebo přesunout obraz pohledem z různých úhlů.</p>
+						<div class="text-box">
+							<a class="more-btn" href="#lentikularni-tisk">Více</a>
+						</div>
+        </div>
+
+		<!--Řezací plotr-->
+		<div class="box">
+            <img src="images/plotr-box-foto.jpg" alt="Obrázek 3" class="gallery">
+						<h2 style="color: white;">Řezací plotr</h2>
+            <p id="black-text">Řezací plotr je zařízení, které přesně vyřezává tvary a grafiku z různých materiálů podle digitální předlohy. Používá se zejména pro výrobu samolepek, fólií a reklamních prvků.</p>
+						<div class="text-box">
+							<a class="more-btn" href="#rezaci-plotr">Více</a>
+						</div>
+        </div>
+
+		<!--Formátování papíru-->
+		<div class="box">
+            <img src="images/formatovani-box-foto.png" alt="Obrázek 3" class="gallery">
+						<h2 style="color: white;">Formátování papíru</h2>
+            <p id="black-text">Formátování papíru je proces, při kterém pomocí řezacího stroje upravujeme papír do různých požadovaných formátů. Díky přesnému řezu je papír připraven k dalšímu zpracování nebo tisku.</p>
+						<div class="text-box">
+							<a class="more-btn" href="#formatovani-papiru">Více</a>
+						</div>
+        </div>
+    </div>
+
+    <!-- Services 1. service -->
+    <section class="service1" id="UV-tisk">
+        <h2 class="section-title">UV tisk – přímý potisk nestandardních materiálů</h2>
+        <div class="video-container">
+					<div class="black-bar"></div>
+            <video class="responsive-video" muted autoplay loop>
+                <source src="videos/IMG_6888.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+        </div>
+
+        <div class="text-block">
+            <h3 class="small-title">Popis</h3>
+						<ul class="small-text">
+							<li>Tiskneme přímo na širokou škálu materiálů – od papíru, plastu, dřeva, skla, reklamních předmětů, kovu až po kůži</li>
+							<li>Máme tiskárny s pracovní plochou 125 x 250 cm (CMYK + parciální bílá) a 90 x 60 cm (CMYK +
+							parciální bílá + UV parciální lak), tento stroj má dispozici rotační osu, tak umíme potisknout i
+							válcové předměty</li>
+						</ul>
+        </div>
+
+        <div class="image-gallery">
+            <img class="gallery-img" src="images/uv-foto.png" alt="Obrázek 1">
+            <img class="gallery-img" src="images/uv-foto1.png" alt="Obrázek 2">
+            <img class="gallery-img" src="images/uv-foto2.png" alt="Obrázek 3">
+        </div>
+    </section>
+
+
+	 <!-- Services 2. service -->
+
+	    <section class="service1" id="frezovani">
+        <h2 class="section-title">Frézování velkých formátů</h2>
+        <div class="video-container">
+					<div class="black-bar"></div>
+            <video class="responsive-video" muted autoplay loop>
+                <source src="videos/IMG_6764.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+        </div>
+
+        <div class="text-block">
+            <h3 class="small-title">Popis</h3>
+						<ul class="small-text">
+							<li>Frézujeme plasty, dřevo, BOND kompoziční panely, polyuretanové a polyetylénové pěny Stadur a
+								mnoho dalších materiálů až do formátu 2 × 3 metry</li>
+							<li>Precizní řezání i tvarování na míru – ideální
+								pro reklamní panely, výstavní desky nebo atypické aplikace</li>
+						</ul>
+        </div>
+
+        <div class="image-gallery">
+            <img class="gallery-img" src="images/frezovani-foto.jpg" alt="Obrázek 1">
+            <img class="gallery-img" src="images/frezovani-foto1.jpg" alt="Obrázek 2">
+			<!--
+            <img class="gallery-img" src="images/wallpapper.jpg" alt="Obrázek 3">
+			-->
+        </div>
+    </section>
+
+
+
+	 <!-- Services 3. service -->
+
+	    <section class="service1" id="laserove-rezani">
+        <h2 class="section-title">Laserové řezání a gravírování</h2>
+        <div class="video-container">
+					<div class="black-bar"></div>
+            <video class="responsive-video" muted autoplay loop>
+                <source src="videos/laser-big-video.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+        </div>
+
+        <div class="text-block">
+            <h3 class="small-title">Popis</h3>
+						<ul class="small-text">
+							<li>Laserem s pracovní plochou 100 x 160 cm řežeme téměř vše kromě skla a kovu – od překližky po
+								plexisklo
+							</li>
+							<li>Gravírujeme do eloxovaného hliníku, skla, skleniček, lahví nebo dalších materiálů s
+								vysokou přesností
+							</li>
+							<li>
+								Laser má rotační osu, tak můžeme gravírovat válcové předměty
+							</li>
+						</ul>
+        </div>
+
+        <div class="image-gallery">
+            <img class="gallery-img" src="images/laser-foto.jpg" alt="Obrázek 1">
+            <img class="gallery-img" src="images/laser-foto1.jpg" alt="Obrázek 2">
+            <img class="gallery-img" src="images/laser-foto2.jpg" alt="Obrázek 3">
+        </div>
+    </section>
+
+
+		 <!-- Services 4. service -->
+
+	    <section class="service1" id="vysek-a-orez">
+        <h2 class="section-title">Výsek a tvarový ořez</h2>
+        <div class="video-container">
+					<div class="black-bar"></div>
+            <video class="responsive-video" muted autoplay loop>
+                <source src="videos/tvarovy-orez.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+        </div>
+
+        <div class="text-block">
+            <h3 class="small-title">Popis</h3>
+						<ul class="small-text">
+							<li>Vysekáváme přesné tvary až do formátu B2 (70 × 50 cm)</li>
+							<li>Krabice, visačky, obaly, přání a další produkty na míru – rychle a efektivně
+							</li>
+						</ul>
+        </div>
+
+        <div class="image-gallery">
+            <img class="gallery-img" src="images/vysek-foto.jpg" alt="Obrázek 1">
+            <img class="gallery-img" src="images/vysek-foto1.jpg" alt="Obrázek 2">
+            <img class="gallery-img" src="images/vysek-foto2.jpg" alt="Obrázek 3">
+        </div>
+    </section>
+
+
+		 <!-- Services 5. service -->
+
+	    <section class="service1" id="ohybani-plastu">
+        <h2 class="section-title">Ohýbání plastů</h2>
+        <div class="video-container">
+					<div class="black-bar"></div>
+            <video class="responsive-video" muted autoplay loop>
+                <source src="videos/ohybani-plastu.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+        </div>
+
+        <div class="text-block">
+            <h3 class="small-title">Popis</h3>
+						<ul class="small-text">
+							<li>Umíme ohýbat a tvarovat plasty do šířky 100 cm</li>
+							<li>Díky ohýbačce plastů vyrobíme stojánky, cedule, držáky a další zakázková řešení</li>
+						</ul>
+        </div>
+		
+        <div class="image-gallery">
+            <img class="gallery-img" src="images/ohybani-plastu-foto.png" alt="Obrázek 1">
+            <img class="gallery-img" src="images/ohybani-plastu-foto1.png" alt="Obrázek 2">
+            <img class="gallery-img" src="images/ohybani-plastu-foto2.png" alt="Obrázek 3">
+        </div>
+    </section>
+		
+
+
+		 <!-- Services 6. service -->
+
+	    <section class="service1" id="lentikularni-tisk">
+        <h2 class="section-title">Lentikulární tisk – efekt animace a 3D</h2>
+        <div class="video-container">
+					<div class="black-bar"></div>
+            <video class="responsive-video" muted autoplay loop>
+                <source src="videos/lentikularni-big-video.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+        </div>
+
+        <div class="text-block">
+            <h3 class="small-title">Popis</h3>
+						<ul class="small-text">
+							<li>Patříme k předním výrobcům lentikulárních tiskovin od vizitky po billboard</li>
+							<li>Ideální pro poutavé reklamní cedule, pohlednice, obaly nebo vizuálně zajímavé dekorace</li>
+							<li>Na výběr máme různé typy čoček podle požadovaného efektu a zobrazení</li>
+						</ul>
+        </div>
+
+        <div class="image-gallery">
+            <img class="gallery-img" src="images/lentikular-foto.png" alt="Obrázek 1">
+            <img class="gallery-img" src="images/lentikular-foto1.png" alt="Obrázek 2">
+			<!--
+            <img class="gallery-img" src="images/wallpapper.jpg" alt="Obrázek 3">
+			-->
+        </div>
+    </section>
+
+
+
+		 <!-- Services 7. service -->
+
+	<section class="service1" id="rezaci-plotr">
+        <h2 class="section-title">Řezací plotr</h2>
+        <div class="video-container">
+					<div class="black-bar"></div>
+            <video class="responsive-video" muted autoplay loop>
+                <source src="videos/plotr-big-video.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+        </div>
+
+        <div class="text-block">
+            <h3 class="small-title">Popis</h3>
+						<ul class="small-text">
+							<li>Řezací plotr šíře 120 cm umožňuje tvarový ořez např. samolepek, etiket a řezané grafiky</li>
+						</ul>
+        </div>
+
+		<!--
+        <div class="image-gallery">
+            <img class="gallery-img" src="images/wallpaperflare.com_wallpaper (10).jpg" alt="Obrázek 1">
+            <img class="gallery-img" src="images/wallpaperflare7.5.jpg" alt="Obrázek 2">
+            <img class="gallery-img" src="images/wallpapper.jpg" alt="Obrázek 3">
+			-->
+        </div>
+    </section>
+
+
+
+			 <!-- Services 8. service -->
+
+	<section class="service1" id="formatovani-papiru">
+        <h2 class="section-title">Formátování papíru</h2>
+        <div class="video-container">
+					<div class="black-bar"></div>
+            <video class="responsive-video" muted autoplay loop>
+                <source src="videos/IMG_6906.mp4" type="video/mp4">
+                Váš prohlížeč nepodporuje HTML5 video.
+            </video>
+        </div>
+
+        <div class="text-block">
+            <h3 class="small-title">Popis</h3>
+						<ul class="small-text">
+							<li>Řezání papíru pomocí stroje do požadovaných formátů (např. A4, A5, A3...).</li>
+						</ul>
+        </div>
+	</section>
+	<!--
+        <div class="image-gallery">
+            <img class="gallery-img" src="images/wallpaperflare.com_wallpaper (10).jpg" alt="Obrázek 1">
+            <img class="gallery-img" src="images/wallpaperflare7.5.jpg" alt="Obrázek 2">
+            <img class="gallery-img" src="images/wallpapper.jpg" alt="Obrázek 3">
+        </div>
+    </section>
+	-->
+
+		<!--Mashines-->
+		<section class="mashines" id="maschines">
+			<div class="text-block">
+				<h2 class="section-title" style="text-align: center;">Stroje</h2>
+				<p class="small-title"><b>Seznám strojů:</b></p>
+				<ul class="small-text">
+					<li>Oce Arizona 350 gt - UV velkoformátová tiskárna, která tiskne v kvalite až "téměř fotografické" na pevné i flexibilní materiály
+					</li>
+					<li>Vhf cam 2030 - robustní CNC obráběcí centrum, které je ideální pro různé obráběcí úlohy</li>
+					<li>Laser co2 bmr - laserový stroj určený k přesnému řezání a gravírování nekovových materiálů, jako je dřevo, akryl nebo kůže
+					</li>
+					<li>Xenons 6090 - výkonná průmyslová UV LED plošná (flatbed) tiskárna formátu cca A1 (600x900 mm), která umožňuje potisk široké škály materiálů s vysokou kvalitou a rychlostí
+					</li>
+					<li>Maxima 115 - stroj na řezání papíru s programovatelným řízením</li>
+					<li>Summa 120 - profesionální řezací plotr určený pro efektivní a přesný výřez potištěných materiálů</li>
+				</ul>
+			</div>
+		
+			<div class="image-gallery-wrapper">
+				<div class="image1-gallery1">
+					<img class="gallery-img" src="images/arizona.jpg" alt="Obrázek 1">
+					<img class="gallery-img" src="images/Freza.jpeg" alt="Obrázek 2">
+					<img class="gallery-img" src="images/Laser.jpeg" alt="Obrázek 3">
+				</div>
+			</div>
+			<div class="image-gallery-wrapper">
+				<div class="image1-gallery1">
+					<img class="gallery-img" src="images/Maxima .jpg" alt="Obrázek 4">
+					<img class="gallery-img" src="images/Summa.jpg" alt="Obrázek 5">
+					<img class="gallery-img" src="images/xenons-x6090.jpg" alt="Obrázek 6">
+				</div>
+			</div>
+		</section>
+
+
+		
+				<!--Portfolio-->
+		<!--	
+		<section class="mashines" id="maschines">
+			<div class="text-block">
+				<h2 class="section-title" style="text-align: center;" id="portfolio">Portfolio</h2>
+				<p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quo nihil? Labore.</p>
+			</div>
+		
+			<div class="image-gallery-wrapper">
+				<div class="image1-gallery1">
+					<img class="gallery-img" src="images/wallpaperflare.com_wallpaper (10).jpg" alt="Obrázek 1">
+					<img class="gallery-img" src="images/wallpaperflare7.5.jpg" alt="Obrázek 2">
+					<img class="gallery-img" src="images/wallpapper.jpg" alt="Obrázek 3">
+				</div>
+			</div>
+
+			<div class="image-gallery-wrapper">
+				<div class="image1-gallery1">
+					<img class="gallery-img" src="images/wallpaperflare.com_wallpaper (10).jpg" alt="Obrázek 1">
+					<img class="gallery-img" src="images/wallpaperflare7.5.jpg" alt="Obrázek 2">
+				</div>
+			</div>
+		</section>
+		-->	
+
+		<section class="mashines">
+			 <div class="contacts">
+				<div class="text-content">
+					<div><h1>Kontakty</h1>
+						<p>CHAMELEON PRINT s.r.o. <br> IČ:28419791 <br> DIČ: CZ28419791 <br> Tel:+420 241 400 814 <br> Fax: +420 241 400 848 <br> E-mail: office@chameleonprint.cz</p>
+					</div>
+					<div>
+						<h1>Adresa</h1>
+						<p>Jílové u Prahy 584, 254 01 Jílové u Prahy</p>
+					</div>
+				</div>
+				<div class="map-container">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.1553623052407!2d14.479815412021916!3d49.89831294391842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b852b2245d5a7%3A0xb87e8b9dc6842f92!2zSsOtbG92w6kgdSBQcmFoeSA1ODQsIDI1NCAwMSBKw61sb3bDqSB1IFByYWh5!5e1!3m2!1scs!2scz!4v1767985491378!5m2!1scs!2scz"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+ 			 </div>
+		</section>
+
+		<!--Kontaktni formular-->
+		<section class="contact-form-section">
+  		<h2>Ozvěte se nám</h2>
+  		<form id="contactForm" class="contact-form">
+    		<input type="text" name="name" placeholder="Jméno" required>
+    		<input type="email" name="email" placeholder="Email" required>
+    		<textarea name="message" placeholder="Zpráva" required></textarea>
+    		<button type="submit">Odeslat</button>
+  		</form>
+			<div id="form-message" class="form-message"></div> <!-- Sem se vloží výsledek -->
+		</section>
+
+		<!--Copyright-->
+		<section id="contact" class="copyright">
+			<p>@Chameleonprint s.r.o</p>
+		</section>
+
+
+
+    <!-- Modal pro zvětšený obrázek -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+		<script src="form.js"></script>
+		<script src="hamburger-menu.js"></script>
+		
+    <script src="script.js"></script>
+	
+</body>
+</html>
