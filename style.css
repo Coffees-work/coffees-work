@@ -477,6 +477,12 @@ body {
   }
 }
 
+/* Třída pro zablokování scrollu pozadí */
+.no-scroll {
+    overflow: hidden;
+    height: 100%; /* Pojistka pro některé mobilní prohlížeče */
+}
+
 .modal {
 	display: none;
 	position: fixed;
@@ -516,6 +522,23 @@ body {
 	font-size: clamp(28px, 3vw, 40px);
 	font-weight: bold;
 	cursor: pointer;
+}
+
+/* Základní styl pro obrázek v modalu */
+.modal-content {
+    transition: transform 0.3s ease; /* Plynulý přechod při zoomu */
+    cursor: zoom-in; /* Kurzor lupy */
+}
+
+/* Třída, ktera se přidáva pomocí JS */
+.modal-content.zoomed {
+    transform: scale(1.5); /* Zvětšení 2x (můžeš změnit dle libosti) */
+    cursor: zoom-out;    /* Kurzor pro zmenšení */
+}
+
+/* Aby se zvětšený obrázek dal posouvat, pokud přeteče modal */
+.modal {
+    overflow: auto; 
 }
 
 /* Animace */

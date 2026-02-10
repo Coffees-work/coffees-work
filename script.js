@@ -6,18 +6,25 @@ function openModal(imgSrc) {
 	modalImg.src = imgSrc;
 	modal.classList.remove('hide');
 	modal.classList.add('show');
+
+	document.body.classList.add('no-scroll');
 }
 
 // Funkce pro zavření modálního okna
 function closeModal() {
 	const modal = document.getElementById('imageModal');
+	const modalImg = document.getElementById('modalImage');
 
 	modal.classList.remove('show');
 	modal.classList.add('hide');
 
+	document.body.classList.remove('no-scroll');
+
 	// Počkej na dokončení animace a pak skryj modal
 	setTimeout(() => {
 		modal.style.display = "none";
+		// RESET ZOOMU: aby další otevřený obrázek nebyl rovnou zvětšený
+		modalImg.classList.remove('zoomed');
 	}, 300);
 }
 
@@ -36,4 +43,10 @@ document.getElementById('imageModal').addEventListener('click', function(event) 
 	if (!modalImg.contains(event.target)) {
 		closeModal();
 	}
+});
+
+document.getElementById('modalImage').addEventListener('click', function(e) {
+    // Zabráníme tomu, aby kliknutí na obrázek zavřelo celý modal
+    e.stopPropagation(); 
+    this.classList.toggle('zoomed');
 });
