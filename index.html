@@ -66,7 +66,7 @@
 
 		<!--UV tisk-->
         <div class="box">
-            <img src="images/uv-tisk-box-foto.webp" alt="Obrázek 1" class="gallery">
+            <img src="images/uv-tisk-box-foto.webp" alt="Obrázek 1" class="gallery" loading="lazy">
 							<h2 style="color: white;">UV tisk</h2>
             	<p id="black-text">UV tisk je moderní technologie tisku, při které se barva okamžitě vytvrzuje UV světlem, což umožňuje tisknout přímo na různé materiály.</p>
             	<div class="text-box">
@@ -150,8 +150,8 @@
         <h2 class="section-title">UV tisk – přímý potisk nestandardních materiálů</h2>
         <div class="video-container">
 					<div class="black-bar"></div>
-            <video class="responsive-video" muted autoplay loop playsinline>
-                <source src="videos/IMG_6888.webm" type="video/mp4">
+            <video class="responsive-video lazy-video" muted autoplay loop playsinline>
+                <source data-src="videos/IMG_6888.webm" type="video/mp4">
                 Váš prohlížeč nepodporuje HTML5 video.
             </video>
         </div>
@@ -180,8 +180,8 @@
         <h2 class="section-title">Frézování velkých formátů</h2>
         <div class="video-container">
 					<div class="black-bar"></div>
-            <video class="responsive-video" muted autoplay loop playsinline>
-                <source src="videos/IMG_6764.mp4" type="video/mp4">
+            <video class="responsive-video lazy-video" muted autoplay loop playsinline>
+                <source data-src="videos/IMG_6764.mp4" type="video/mp4">
                 Váš prohlížeč nepodporuje HTML5 video.
             </video>
         </div>
@@ -213,8 +213,8 @@
         <h2 class="section-title">Laserové řezání a gravírování</h2>
         <div class="video-container">
 					<div class="black-bar"></div>
-            <video class="responsive-video" muted autoplay loop playsinline>
-                <source src="videos/laser-big-video.webm" type="video/mp4">
+            <video class="responsive-video lazy-video" muted autoplay loop playsinline>
+                <source data-src="videos/laser-big-video.webm" type="video/mp4">
                 Váš prohlížeč nepodporuje HTML5 video.
             </video>
         </div>
@@ -248,8 +248,8 @@
         <h2 class="section-title">Výsek a tvarový ořez</h2>
         <div class="video-container">
 					<div class="black-bar"></div>
-            <video class="responsive-video" muted autoplay loop playsinline>
-                <source src="videos/tvarovy-orez.mp4" type="video/mp4">
+            <video class="responsive-video lazy-video" muted autoplay loop playsinline>
+                <source data-src="videos/tvarovy-orez.mp4" type="video/mp4">
                 Váš prohlížeč nepodporuje HTML5 video.
             </video>
         </div>
@@ -277,8 +277,8 @@
         <h2 class="section-title">Ohýbání plastů</h2>
         <div class="video-container">
 					<div class="black-bar"></div>
-            <video class="responsive-video" muted autoplay loop playsinline>
-                <source src="videos/ohybani-plastu.webm" type="video/mp4">
+            <video class="responsive-video lazy-video" muted autoplay loop playsinline>
+                <source data-src="videos/ohybani-plastu.webm" type="video/mp4">
                 Váš prohlížeč nepodporuje HTML5 video.
             </video>
         </div>
@@ -306,8 +306,8 @@
         <h2 class="section-title">Lentikulární tisk – efekt animace a 3D</h2>
         <div class="video-container">
 					<div class="black-bar"></div>
-            <video class="responsive-video" muted autoplay loop playsinline>
-                <source src="videos/lentikularni-big-video.webm" type="video/mp4">
+            <video class="responsive-video lazy-video" muted autoplay loop playsinline>
+                <source data-src="videos/lentikularni-big-video.webm" type="video/mp4">
                 Váš prohlížeč nepodporuje HTML5 video.
             </video>
         </div>
@@ -338,8 +338,8 @@
         <h2 class="section-title">Řezací plotr</h2>
         <div class="video-container">
 					<div class="black-bar"></div>
-            <video class="responsive-video" muted autoplay loop playsinline>
-                <source src="videos/plotr-big-video.mp4" type="video/mp4">
+            <video class="responsive-video lazy-video" muted autoplay loop playsinline>
+                <source data-src="videos/plotr-big-video.mp4" type="video/mp4">
                 Váš prohlížeč nepodporuje HTML5 video.
             </video>
         </div>
@@ -368,8 +368,8 @@
         <h2 class="section-title">Formátování papíru</h2>
         <div class="video-container">
 					<div class="black-bar"></div>
-            <video class="responsive-video" muted autoplay loop playsinline poster="images/formatovani-box-foto.webp" preload="metadata">
-                <source src="videos/IMG_6906.webm" type="video/mp4">
+            <video class="responsive-video lazy-video" muted autoplay loop playsinline poster="images/formatovani-box-foto.webp">
+                <source data-src="videos/IMG_6906.webm" type="video/mp4">
                 Váš prohlížeč nepodporuje HTML5 video.
             </video>
         </div>
@@ -499,10 +499,10 @@
         <div id="caption"></div>
     </div>
 
-		<script src="form.js"></script>
-		<script src="hamburger-menu.js"></script>
-		
+	<script src="form.js"></script>
+	<script src="hamburger-menu.js"></script>
     <script src="script.js"></script>
+	<script src="lazy-loading-videos.js"></script>
 	
 </body>
 </html>
