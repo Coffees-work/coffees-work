@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbx1dtD1uk_ZOmJFzq7CJXdYquXv_-5UZSEx2AMk3Fg4vf9DQV41_a05E6aI4ehertvq/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz4MA07IcoF4yCq2lSq9VfKlrkIpVQNWzRmB1hTVgCX1TeSmLzl5eiu33w2lcf9tM4n2A/exec';
 const form = document.getElementById('contactForm');
 const messageBox = document.getElementById('form-message');
 
