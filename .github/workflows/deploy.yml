@@ -1,0 +1,27 @@
+name: Nasadit web na Active 24
+
+on:
+  push:
+    branches:
+      - main  # Spustí se pokaždé, když uděláš push do větve main
+
+jobs:
+  web-deploy:
+    name: FTP Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 🚀 Sync files via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /www/  # Cesta ke složce na serveru
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/.vscode/**
+          **/node_modules/**
